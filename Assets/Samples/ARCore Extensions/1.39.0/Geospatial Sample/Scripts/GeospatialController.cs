@@ -47,6 +47,10 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         /// <summary>
         /// The ARSessionOrigin used in the sample.
         /// </summary>
+        ///
+        public Text locationLog;
+        
+        
         public ARSessionOrigin SessionOrigin;
 
         /// <summary>
@@ -1289,13 +1293,17 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                 yield break;
             }
 
+            // その場での最新の配列（緯度、経度）を返す。
             var location = Input.location.lastData;
+
+            // 緯度経度を引数として、その場所でのVPSの利用可否を返す。
             var vpsAvailabilityPromise =
                 AREarthManager.CheckVpsAvailabilityAsync(location.latitude, location.longitude);
             yield return vpsAvailabilityPromise;
 
             Debug.LogFormat("VPS Availability at ({0}, {1}): {2}",
                 location.latitude, location.longitude, vpsAvailabilityPromise.Result);
+            locationLog.text = vpsAvailabilityPromise.Result.ToString();
             VPSCheckCanvas.SetActive(vpsAvailabilityPromise.Result != VpsAvailability.Available);
         }
 

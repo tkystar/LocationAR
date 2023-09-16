@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: UnityProject
+  productName: UnityProject0914
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -135,10 +135,6 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
   preloadedAssets:
-  - {fileID: 4800000, guid: e7c77f6eaab324a819efdc13b8125a39, type: 3}
-  - {fileID: 4800000, guid: 6743a50a812740be8c0aa3fccc46fae9, type: 3}
-  - {fileID: 11400000, guid: 465c6ab451fde44649b28f9b26f767e3, type: 2}
-  - {fileID: -8911131607835678924, guid: c4cbf563da94547709f95d3cb763a9d2, type: 2}
   - {fileID: 11400000, guid: aae5c5ae1c3cd4c6684048adb6a871c8, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -159,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    iPhone: com.DefaultCompany.UnityProject
+    iPhone: com.DefaultCompany.UnityProject0914
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -236,7 +232,7 @@ PlayerSettings:
   iOSManualSigningProvisioningProfileType: 0
   tvOSManualSigningProvisioningProfileType: 0
   appleEnableAutomaticSigning: 0
-  iOSRequireARKit: 0
+  iOSRequireARKit: 1
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   shaderPrecisionModel: 0
@@ -836,7 +832,8 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    iPhone: UNITY_XR_ARKIT_LOADER_ENABLED;ARCORE_EXTENSIONS_IOS_SUPPORT;GEOSPATIAL_IOS_SUPPORT
+    Android: ARCORE_INTERNAL_GEOSPATIAL_CREATOR_ENABLED
+    iPhone: UNITY_XR_ARKIT_LOADER_ENABLED;ARCORE_EXTENSIONS_IOS_SUPPORT;GEOSPATIAL_IOS_SUPPORT;ARCORE_INTERNAL_GEOSPATIAL_CREATOR_ENABLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
