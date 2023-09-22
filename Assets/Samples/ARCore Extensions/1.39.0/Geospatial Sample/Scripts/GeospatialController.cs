@@ -48,9 +48,10 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         /// The ARSessionOrigin used in the sample.
         /// </summary>
         ///
-        public Text locationLog;
-        
-        
+        ///
+        public GeospatialPose pose;
+
+
         public ARSessionOrigin SessionOrigin;
 
         /// <summary>
@@ -624,7 +625,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
             bool isSessionReady = ARSession.state == ARSessionState.SessionTracking &&
                 Input.location.status == LocationServiceStatus.Running;
             var earthTrackingState = EarthManager.EarthTrackingState;
-            var pose = earthTrackingState == TrackingState.Tracking ?
+            pose = earthTrackingState == TrackingState.Tracking ?
                 EarthManager.CameraGeospatialPose : new GeospatialPose();
             if (!isSessionReady || earthTrackingState != TrackingState.Tracking ||
                 pose.OrientationYawAccuracy > _orientationYawAccuracyThreshold ||
@@ -1303,7 +1304,6 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
 
             Debug.LogFormat("VPS Availability at ({0}, {1}): {2}",
                 location.latitude, location.longitude, vpsAvailabilityPromise.Result);
-            locationLog.text = vpsAvailabilityPromise.Result.ToString();
             VPSCheckCanvas.SetActive(vpsAvailabilityPromise.Result != VpsAvailability.Available);
         }
 
