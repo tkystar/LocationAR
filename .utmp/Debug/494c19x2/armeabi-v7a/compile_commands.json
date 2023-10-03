@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/takuya/Unity/LocationAR/.utmp/Debug/494c19x2/armeabi-v7a",
+  "command": "/Applications/2023.1.0b7/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi22 --sysroot=/Applications/2023.1.0b7/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DEXTERNAL_FRAME_PACING_CODE -Dswappywrapper_EXPORTS -isystem /Users/takuya/.gradle/caches/transforms-3/467c3579f266553acb3501b86c7ede7f/transformed/games-frame-pacing-1.10.0/prefab/modules/swappy_static/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -Wall -Wextra -pedantic -Werror -g  -fno-limit-debug-info -fPIC -o FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o -c /Users/takuya/Unity/LocationAR/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/cpp/FramePacing/UnitySwappyWrapper.cpp",
+  "file": "/Users/takuya/Unity/LocationAR/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/cpp/FramePacing/UnitySwappyWrapper.cpp"
+}
+]

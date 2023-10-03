@@ -1,0 +1,5 @@
+/Users/takuya/Unity/LocationAR/.utmp/RelWithDebInfo/915g3c61/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/takuya/Unity/LocationAR/.utmp/RelWithDebInfo/915g3c61/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/takuya/Unity/LocationAR/.utmp/RelWithDebInfo/915g3c61/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/takuya/Unity/LocationAR/.utmp/RelWithDebInfo/915g3c61/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/takuya/Unity/LocationAR/.utmp/RelWithDebInfo/915g3c61/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+# ninja log v5
+1	99	1695571891832421476	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	ec2d089f5306c609
+100	259	1695571891916528424	/Users/takuya/Unity/LocationAR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/442f6l5b/obj/arm64-v8a/libswappywrapper.so	d78982ef4bf4df3e

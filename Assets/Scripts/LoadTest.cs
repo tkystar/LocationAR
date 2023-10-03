@@ -27,6 +27,8 @@ public class LoadTest : MonoBehaviour
     
     [SerializeField] private AudioClip popUpClose;
 
+    public bool IsLocalizing = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,13 +47,17 @@ public class LoadTest : MonoBehaviour
             time += Time.deltaTime;
         }
 
-        circleImage.fillAmount = time / 7;
+        //circleImage.fillAmount = time / 7;
 
-        if (circleImage.fillAmount >= 1)
+        if (time > 7)
         {
-            time = 0;
+            //time = 0;
             isOn = false;
-            Complete();
+            if (IsLocalizing)
+            {
+                Complete();
+            }
+            
         }
     }
 
@@ -63,11 +69,11 @@ public class LoadTest : MonoBehaviour
 
     private void Complete()
     {
-        startButton.SetActive(true);
-        loadObj.SetActive(false);
         audio.clip = popUp;
         audio.Play();
         titleText.text = "体験を始める";
         contentText.text = "現実世界とバーチャルが組み合わさった世界を見てみよう";
+        startButton.SetActive(true);
+        loadObj.SetActive(false);
     }
 }

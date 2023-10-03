@@ -17,6 +17,8 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
+using UnityEngine.Timeline;
+
 namespace Google.XR.ARCoreExtensions.Samples.Geospatial
 {
     using System;
@@ -49,6 +51,11 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         /// </summary>
         ///
         ///
+        [SerializeField]
+        private GameObject PrePlay;
+        
+        [SerializeField]private LoadTest LoadTest;
+        
         public GeospatialPose pose;
 
 
@@ -303,7 +310,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         private bool _waitingForLocationService = false;
         private bool _isInARView = false;
         private bool _isReturning = false;
-        private bool _isLocalizing = false;
+        public bool _isLocalizing = false;
         private bool _enablingGeospatial = false;
         private bool _shouldResolvingHistory = false;
         private float _localizationPassedTime = 0f;
@@ -318,8 +325,8 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         /// </summary>
         public void OnGetStartedClicked()
         {
-            PlayerPrefs.SetInt(_hasDisplayedPrivacyPromptKey, 1);
-            PlayerPrefs.Save();
+            //PlayerPrefs.SetInt(_hasDisplayedPrivacyPromptKey, 1);
+            //PlayerPrefs.Save();
             SwitchToARView(true);
         }
 
@@ -669,6 +676,13 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                 AnchorSettingButton.gameObject.SetActive(true);
                 ClearAllButton.gameObject.SetActive(_anchorObjects.Count > 0);
                 SnackBarText.text = _localizationSuccessMessage;
+                
+                // 追加
+                LoadTest.IsLocalizing = true;
+                
+                
+                
+                
                 foreach (var go in _anchorObjects)
                 {
                     go.SetActive(true);
@@ -1234,6 +1248,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
             ARViewCanvas.SetActive(enable);
             PrivacyPromptCanvas.SetActive(!enable);
             VPSCheckCanvas.SetActive(false);
+            PrePlay.SetActive(enable);
             if (enable && _asyncCheck == null)
             {
                 _asyncCheck = AvailabilityCheck();

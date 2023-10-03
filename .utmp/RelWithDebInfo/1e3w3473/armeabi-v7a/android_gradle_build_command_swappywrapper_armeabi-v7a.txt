@@ -1,0 +1,7 @@
+Executable : /Applications/2023.1.0b7/PlaybackEngines/AndroidPlayer/SDK/cmake/3.22.1/bin/ninja
+arguments : 
+-C
+/Users/takuya/Unity/LocationAR/.utmp/RelWithDebInfo/1e3w3473/armeabi-v7a
+swappywrapper
+jvmArgs : 
+

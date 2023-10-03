@@ -1,0 +1,3 @@
+ninja: Entering directory `/Users/takuya/Unity/LocationAR/.utmp/RelWithDebInfo/442f6l5b/arm64-v8a'
+[1/2] Building CXX object FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o
+[2/2] Linking CXX shared library /Users/takuya/Unity/LocationAR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/442f6l5b/obj/arm64-v8a/libswappywrapper.so

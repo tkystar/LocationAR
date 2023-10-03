@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GeoCreaterTest.unity
     guid: 6b2ccb827588843e18fa44d38c4c14e9
   - enabled: 0
@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/IidabasiTest02.unity
     guid: 9561f0a60f8aa4453bd89636f78ea469
+  - enabled: 0
+    path: Assets/Scenes/PreVerification/PreVerificationv01.unity
+    guid: 811bd99cbb08845898d15f059b1f651b
+  - enabled: 1
+    path: Assets/Scenes/PreVerification/PreVerification_fix.unity
+    guid: ac817d7728c4d4bd8bcd945a79fc8e7c
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0554a417a734249c4b3a4f090712a67e, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 896321ec3bd464d408382d15260296b8, type: 2}
