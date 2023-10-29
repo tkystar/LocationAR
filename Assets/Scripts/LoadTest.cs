@@ -14,11 +14,6 @@ public class LoadTest : MonoBehaviour
 
     [SerializeField] private GameObject startButton;
 
-    [SerializeField] private Text contentText;
-    
-    [SerializeField] private Text titleText;
-
-
     [SerializeField] private GameObject loadObj;
 
     private AudioSource audio;
@@ -29,12 +24,15 @@ public class LoadTest : MonoBehaviour
 
     public bool IsLocalizing = false;
 
+    [SerializeField] private Image background;
+
+    [SerializeField] private Sprite complete;
+
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
         startButton.SetActive(false);
-        circleImage = loadObj.GetComponent<Image>();
         isOn = false;
         StartCoroutine(Loading());
     }
@@ -51,11 +49,12 @@ public class LoadTest : MonoBehaviour
 
         if (time > 7)
         {
-            //time = 0;
-            isOn = false;
             if (IsLocalizing)
             {
                 Complete();
+                
+                time = 0;
+                isOn = false;
             }
             
         }
@@ -71,8 +70,7 @@ public class LoadTest : MonoBehaviour
     {
         audio.clip = popUp;
         audio.Play();
-        titleText.text = "体験を始める";
-        contentText.text = "現実世界とバーチャルが組み合わさった世界を見てみよう";
+        background.sprite = complete;
         startButton.SetActive(true);
         loadObj.SetActive(false);
     }

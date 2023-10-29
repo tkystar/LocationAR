@@ -58,7 +58,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         
         public GeospatialPose pose;
 
-
+        [SerializeField] private UIManager uiManager;
         public ARSessionOrigin SessionOrigin;
 
         /// <summary>
@@ -323,11 +323,17 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         /// <summary>
         /// Callback handling "Get Started" button click event in Privacy Prompt.
         /// </summary>
+        ///
+        private void Start()
+        {
+            SwitchToARView(true);
+        }
+
         public void OnGetStartedClicked()
         {
             //PlayerPrefs.SetInt(_hasDisplayedPrivacyPromptKey, 1);
             //PlayerPrefs.Save();
-            SwitchToARView(true);
+            //SwitchToARView(true);
         }
 
         /// <summary>
@@ -1155,6 +1161,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
 
             if (anchor != null)
             {
+                /*
                 GameObject anchorGO = history.AnchorType == AnchorType.Geospatial ?
                     Instantiate(GeospatialPrefab, anchor.transform) :
                     Instantiate(TerrainPrefab, anchor.transform);
@@ -1162,6 +1169,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                 anchorGO.transform.parent = anchor.gameObject.transform;
                 _anchorObjects.Add(anchor.gameObject);
                 SnackBarText.text = GetDisplayStringForAnchorPlacedSuccess();
+            */
             }
             else
             {
@@ -1245,10 +1253,11 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
             SessionOrigin.gameObject.SetActive(enable);
             Session.gameObject.SetActive(enable);
             ARCoreExtensions.gameObject.SetActive(enable);
-            ARViewCanvas.SetActive(enable);
+            //ARViewCanvas.SetActive(enable);
             PrivacyPromptCanvas.SetActive(!enable);
             VPSCheckCanvas.SetActive(false);
             PrePlay.SetActive(enable);
+            uiManager.LocalizeCompleted = true;
             if (enable && _asyncCheck == null)
             {
                 _asyncCheck = AvailabilityCheck();

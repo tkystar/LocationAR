@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.4439403, g: 0.4931519, b: 0.5722083, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -282,6 +282,7 @@ MonoBehaviour:
   - {fileID: 4287246207192390535, guid: 78fe47285386740a4a92ee5f6a680005, type: 3}
   - {fileID: 1969125992622501448, guid: 06c30c64263b44866bf2b82c1d60d1af, type: 3}
   instanceCanvas: {fileID: 1664766043}
+  mainCamera: {fileID: 0}
 --- !u!114 &134363325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,9 +1641,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 798131055}
-  contentText: {fileID: 997829261}
-  titleText: {fileID: 166332281}
   loadObj: {fileID: 910995910}
+  popUp: {fileID: 0}
+  popUpClose: {fileID: 0}
+  IsLocalizing: 0
+  background: {fileID: 0}
+  complete: {fileID: 0}
 --- !u!114 &1526420752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2140,3 +2144,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075456815}
   m_CullTransparentMesh: 0
+--- !u!1 &2086732217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086732218}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086732218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086732217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.153631, y: 2.16091, z: 11.91902}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

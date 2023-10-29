@@ -23,9 +23,30 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PreVerification/PreVerificationv01.unity
     guid: 811bd99cbb08845898d15f059b1f651b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PreVerification/PreVerification_fix.unity
     guid: ac817d7728c4d4bd8bcd945a79fc8e7c
+  - enabled: 1
+    path: Assets/Scenes/Prod/HomeScene.unity
+    guid: 60a1c866e4963490da75286b676427b6
+  - enabled: 0
+    path: Assets/Scenes/Prod/MainScene.unity
+    guid: cfb5e3078befa4206a006f3ee7a720a3
+  - enabled: 0
+    path: Assets/Scenes/PreVerification/Azamino/LocalTest.unity
+    guid: 5b2369769ef5447e3a882b6b6b592c34
+  - enabled: 0
+    path: Assets/Scenes/DemoVideo.unity
+    guid: e9f179fc5897f47c8b0c8e8d83506ae0
+  - enabled: 0
+    path: Assets/Scenes/Model.unity
+    guid: 65c84b0f5eb784b06a9befbd05924129
+  - enabled: 0
+    path: Assets/Scenes/Prod/MainTest.unity
+    guid: 4d263993ee54b4074aefa9f92e061b9f
+  - enabled: 1
+    path: Assets/Scenes/Prod/Main.unity
+    guid: 790cd03656f7444e8a717a721cb8efa3
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0554a417a734249c4b3a4f090712a67e, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 896321ec3bd464d408382d15260296b8, type: 2}

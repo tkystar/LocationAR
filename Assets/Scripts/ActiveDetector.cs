@@ -22,7 +22,6 @@ public class ActiveDetector : MonoBehaviour
             
         Debug.Log("すり抜けた！");
         PlayScaleAnim(true);
-        GetComponent<AudioSource>().Play();
     }
     
     private void OnTriggerExit(Collider other)
@@ -31,7 +30,6 @@ public class ActiveDetector : MonoBehaviour
 
         Debug.Log("すり抜けた！");
         PlayScaleAnim(false);
-        GetComponent<AudioSource>().Play();
     }
     
     private void OnTriggerStay(Collider other)

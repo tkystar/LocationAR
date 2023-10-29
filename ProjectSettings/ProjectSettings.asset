@@ -8,12 +8,12 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 0
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: PreVerification
+  productName: Azamino
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -133,8 +133,12 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.1
+  bundleVersion: 1.3
   preloadedAssets:
+  - {fileID: 4800000, guid: e7c77f6eaab324a819efdc13b8125a39, type: 3}
+  - {fileID: 4800000, guid: 6743a50a812740be8c0aa3fccc46fae9, type: 3}
+  - {fileID: -8911131607835678924, guid: c4cbf563da94547709f95d3cb763a9d2, type: 2}
+  - {fileID: 11400000, guid: 465c6ab451fde44649b28f9b26f767e3, type: 2}
   - {fileID: 11400000, guid: aae5c5ae1c3cd4c6684048adb6a871c8, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -155,15 +159,15 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.UnityProject0914
-    Standalone: com.DefaultCompany.PreVerification
-    iPhone: com.DefaultCompany.PreVerification
+    Android: com.DefaultCompany.Azamino
+    Standalone: com.DefaultCompany.Azamino
+    iPhone: com.DefaultCompany.Azamino
   buildNumber:
     Standalone: 0
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 4
+  AndroidBundleVersionCode: 10
   AndroidMinSdkVersion: 24
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -253,8 +257,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: user.keystore'
-  AndroidKeyaliasName: fesar
+  AndroidKeystoreName: '{dedicated}: Desktop/user.keystore'
+  AndroidKeyaliasName: azaminorelease
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -278,7 +282,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
+      m_Icon: {fileID: 2800000, guid: 87d16db13015748fb84918e913492b5a, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -357,31 +361,31 @@ PlayerSettings:
       m_Kind: 4
       m_SubKind: App Store
     - m_Textures:
-      - {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
+      - {fileID: 2800000, guid: 89add6a7f536a43619c38621fbab9abf, type: 3}
       m_Width: 180
       m_Height: 180
       m_Kind: 0
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
+      - {fileID: 2800000, guid: 89add6a7f536a43619c38621fbab9abf, type: 3}
       m_Width: 120
       m_Height: 120
       m_Kind: 0
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
+      - {fileID: 2800000, guid: 89add6a7f536a43619c38621fbab9abf, type: 3}
       m_Width: 167
       m_Height: 167
       m_Kind: 0
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
+      - {fileID: 2800000, guid: 89add6a7f536a43619c38621fbab9abf, type: 3}
       m_Width: 152
       m_Height: 152
       m_Kind: 0
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
+      - {fileID: 2800000, guid: 89add6a7f536a43619c38621fbab9abf, type: 3}
       m_Width: 76
       m_Height: 76
       m_Kind: 0
@@ -449,8 +453,8 @@ PlayerSettings:
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
-      - {fileID: 2800000, guid: 92a3beed23bfe4e7a888df7be5cb921a, type: 3}
+      - {fileID: 2800000, guid: 89add6a7f536a43619c38621fbab9abf, type: 3}
+      - {fileID: 2800000, guid: 89add6a7f536a43619c38621fbab9abf, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
